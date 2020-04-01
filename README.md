@@ -1,6 +1,6 @@
 # [HumHub](https://www.humhub.org/en) Scroll Up Module
 
-Allows you to scroll up in one action!
+With this module, when enabled, creates a button action that allows you to instantly scroll up on your dashboard after loading content.
 
 ### **Product Distributors:**
 
