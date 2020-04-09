@@ -3,9 +3,22 @@
 use yii\helpers\Url;
 use humhub\libs\Html;
 use humhub\models\Setting;
-use humhub\modules\scrollup\Assets;
 
-Assets::register($this);
+$this->registerJs("var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});");
+
 ?>
 
 <?= Html::beginTag('div') ?>

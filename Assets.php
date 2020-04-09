@@ -16,10 +16,6 @@ class Assets extends AssetBundle
         'css/scrollup.css',
     ];
 
-    public $js = [
-        'js/scrollup.js',
-    ];
-
     public $depends = [
         'yii\web\JqueryAsset',
     ];
