@@ -2,26 +2,24 @@
 
 namespace humhub\modules\scrollup\widgets;
 
+use Yii;
 use yii\helpers\Json;
 use yii\helpers\Html;
-use humhub\components\Widget;
+use humhub\widgets\Pjax;
 use humhub\modules\scrollup\Assets;
 /**
  * scroll-up widget to include in a website
  *
  */
-class ScrollUp extends Widget
+class ScrollUp extends Pjax
 {
 
     public $contentContainer;
 
-    /**
-     * @inheritdoc
-     */
-    public function init()
+    public static function isActive()
     {
-        $view = $this->getView();
-        Assets::register($view);
+        // Pjax work around
+        return Yii::$app->params['enablePjax'];
     }
 
     /**
@@ -29,6 +27,14 @@ class ScrollUp extends Widget
      */
     public function run()
     {
-        return $this->render('scrollup', ['class'=>'glyphicon glyphicon-menu-up button-circle'], ['id'=>'btn-top-scroller', 'class'=>'button']);
+        $view = $this->getView();
+        Assets::register($view);
+
+        // Enable use of inline JS
+        $view->registerJsConfig('client.pjax', [
+            'active' => self::isActive(),
+            'options' => $this->clientOptions
+        ]);
+        return $this->render('scrollup'/*, ['class'=>'glyphicon glyphicon-menu-up button-circle'], ['id'=>'btn-top-scroller', 'class'=>'button']*/);
     }
 }
