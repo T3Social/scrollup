@@ -1,4 +1,8 @@
 ## Changelogs
+Date: *4/13/2020*
+- Enh: Position Switch Option
+- Chg: New version
+
 Date: *4/9/2020*
 - Enh: Remove JS file completely
 - Fix: Pjax loading issues

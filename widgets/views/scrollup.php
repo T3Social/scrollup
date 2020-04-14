@@ -22,5 +22,5 @@ btn.on('click', function(e) {
 ?>
 
 <?= Html::beginTag('div') ?>
-<a id="button"></a>
+<a id="button" style="position: fixed; bottom: 30px; <?= $position; ?>"></a>
 <?= Html::endTag('div'); ?>
