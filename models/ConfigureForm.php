@@ -55,7 +55,7 @@ class ConfigureForm extends Model
 
         $this->color = Yii::$app->getModule('scrollup')->settings->get('color');
 
-        return true;
+      return true;
     }
 
     public function save()
