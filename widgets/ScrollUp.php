@@ -39,6 +39,10 @@ class ScrollUp extends Pjax
 
         $position = Yii::$app->getModule('scrollup')->getPosition() . '';
 
+        $color = Yii::$app->getModule('scrollup')->getColor() . '';
+
+        return $this->render('scrollup', ['position' => $position, 'color' => $color]);
+
         return $this->render('scrollup', ['position' => $position]);
     }
 }

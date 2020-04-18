@@ -1,4 +1,7 @@
 ## Changelogs
+Date: *4/18/2020*
+- Enh: Custom Color
+
 Date: *4/13/2020*
 - Enh: Position Switch Option
 - Chg: New version

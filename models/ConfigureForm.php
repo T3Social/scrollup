@@ -13,13 +13,16 @@ class ConfigureForm extends Model
 
     public $position;
 
+    public $color;
+
     /**
      * @inheritdoc
      */
     public function rules()
     {
         return [
-            ['position', 'required']
+            ['position', 'required'],
+            ['color', 'string']
         ];
     }
 
@@ -29,7 +32,8 @@ class ConfigureForm extends Model
     public function attributeLabels()
     {
         return [
-            'position' => 'Position:'
+            'position' => 'Position:',
+            'color' => 'Color:'
         ];
     }
 
@@ -40,21 +44,26 @@ class ConfigureForm extends Model
     {
         return [
             'position' => 'e.g: <code>left: 30px;</code> or <code>right: 30px;</code>',
+            'color' => 'e.g <code>#000000</code>'
         ];
     }
 
     public function loadSettings()
     {
-        
+
         $this->position = Yii::$app->getModule('scrollup')->settings->get('position');
 
-        return true;
+        $this->color = Yii::$app->getModule('scrollup')->settings->get('color');
+
+      return true;
     }
 
     public function save()
     {
 
         Yii::$app->getModule('scrollup')->settings->set('position', $this->position);
+
+        Yii::$app->getModule('scrollup')->settings->set('color', $this->color);
 
         return true;
     }
