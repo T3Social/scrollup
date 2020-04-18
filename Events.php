@@ -11,7 +11,7 @@ class Events extends BaseObject
 {
 
      /**
-     * @param Event $event
+     * @param \yii\base\Event $event
      * @throws \Exception
      * @throws \Throwable
      */
@@ -28,7 +28,7 @@ class Events extends BaseObject
     }
 
      /**
-     * @param Event $event
+     * @param \yii\base\Event $event
      * @throws \Exception
      * @throws \Throwable
      */
