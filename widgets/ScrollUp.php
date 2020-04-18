@@ -7,6 +7,7 @@ use yii\helpers\Json;
 use yii\helpers\Html;
 use humhub\widgets\Pjax;
 use humhub\modules\scrollup\Assets;
+
 /**
  * scroll-up widget to include in a website
  *
@@ -35,6 +36,11 @@ class ScrollUp extends Pjax
             'active' => self::isActive(),
             'options' => $this->clientOptions
         ]);
-        return $this->render('scrollup'/*, ['class'=>'glyphicon glyphicon-menu-up button-circle'], ['id'=>'btn-top-scroller', 'class'=>'button']*/);
+
+        $position = Yii::$app->getModule('scrollup')->getPosition() . '';
+
+        $color = Yii::$app->getModule('scrollup')->getColor() . '';
+
+        return $this->render('scrollup', ['position' => $position, 'color' => $color]);
     }
 }

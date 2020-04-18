@@ -15,6 +15,7 @@ return [
     'events' => [
         ['class' => Dashboard::class, 'event' => Dashboard::EVENT_INIT, 'callback' => [Events::class, 'onScrollUp']],
         ['class' => Space::class, 'event' => Space::EVENT_INIT, 'callback' => [Events::class, 'onScrollUp']],
+        ['class' => AdminMenu::class, 'event' => AdminMenu::EVENT_INIT, 'callback' => [Events::class, 'onAdminMenuInit']]
     ]
 ];
 ?>
