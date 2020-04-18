@@ -44,7 +44,7 @@ class ConfigureForm extends Model
     {
         return [
             'position' => 'e.g: <code>left: 30px;</code> or <code>right: 30px;</code>',
-            'color' => 'e.g <code>#000000</code>'
+            'color' => 'e.g <code>#000000</code> or in some case just the name of the color.'
         ];
     }
 
