@@ -16,9 +16,7 @@ class Assets extends AssetBundle
 {
     public $sourcePath = '@scrollup/assets';
 
-    public $publishOptions = [
-        'forceCopy' => true
-    ];
+    public $defer = true;
 
     public $css = [
         'css/scrollup.css',
