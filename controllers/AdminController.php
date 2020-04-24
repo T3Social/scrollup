@@ -1,10 +1,10 @@
 <?php
 
-namespace humhub\modules\scrollup\controllers;
+namespace gm\humhub\modules\scrollup\controllers;
 
 use Yii;
 use humhub\modules\admin\components\Controller;
-use humhub\modules\scrollup\models\ConfigureForm;
+use gm\humhub\modules\scrollup\models\ConfigureForm;
 
 class AdminController extends Controller
 {

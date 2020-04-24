@@ -1,7 +1,7 @@
 /* Button */
-#button {
+#scrollUpButton {
   display: inline-block;
-  /*background-color: #708FA0;*/
+  position:fixed;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -11,8 +11,9 @@
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
+  bottom: 30px;
 }
-#button::after {
+#scrollUpButton::after {
   content: "\f077";
   font-family: FontAwesome;
   font-weight: normal;
@@ -21,30 +22,14 @@
   line-height: 50px;
   color: #fff;
 }
-#button:hover {
+#scrollUpButton:hover {
   cursor: pointer;
   background-color: #333;
 }
-#button:active {
+#scrollUpButton:active {
   background-color: #555;
 }
-#button.show {
+#scrollUpButton.show {
   opacity: 1;
   visibility: visible;
-}
-#button-circle {
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    background-color: #000000;
-    padding-top: 5px;
-    font-size: 1.25em;
-    color: #ffffff;
-}
-
-/* Styles for the content section */
-@media (min-width: 500px) {
-  #button {
-    margin: 30px;
-  }
 }

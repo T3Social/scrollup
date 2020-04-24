@@ -1,5 +1,6 @@
 <?php
 
+use kartik\widgets\ColorInput;
 use yii\bootstrap\ActiveForm;
 use yii\helpers\Html;
 ?>
@@ -13,7 +14,7 @@ use yii\helpers\Html;
         <?php $form = ActiveForm::begin(['id' => 'configure-form']); ?>
         <div class="form-group">
             <?= $form->field($model, 'position'); ?>
-            <?= $form->field($model, 'color'); ?>
+            <?= $form->field($model, 'color')->widget(ColorInput::class) ?>
         </div>
 
         <div class="form-group">
