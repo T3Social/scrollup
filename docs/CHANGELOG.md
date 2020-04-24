@@ -1,4 +1,7 @@
 ## Changelogs
+Date: *4/24/2020*
+- Fix: ConfigureForm not validated
+
 Date: *4/23/2020*
 - Fix: Displaying scroll button in transpant when config options aren't filled in
 
