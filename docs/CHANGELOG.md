@@ -1,4 +1,7 @@
 ## Changelogs
+Date: *5/5/2020*
+- Enh: Increased minimum HumHub version to `v1.4.x`
+
 Date: *4/24/2020*
 - Fix: ConfigureForm not validated
 
