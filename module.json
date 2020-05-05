@@ -4,7 +4,7 @@
     "name": "Scroll Up",
     "description": "Allows you to scroll up in one action!",
     "humhub": {
-        "minVersion": "1.3"
+        "minVersion": "1.4"
     },
     "keywords": ["scrolling", "module"],
     "screenshots": ["assets/Screenshot_1.gif"],
