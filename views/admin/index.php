@@ -18,7 +18,7 @@ use yii\helpers\Html;
         </div>
 
         <div class="form-group">
-            <?= Html::submitButton('Save', ['class' => 'btn btn-primary', 'data-ui-loader' => '']); ?>
+            <?= Html::submitButton(\Yii::t('ScrollupModule.config', 'Save'), ['class' => 'btn btn-primary', 'data-ui-loader' => '']); ?>
         </div>
 
         <?php ActiveForm::end(); ?>
