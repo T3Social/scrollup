@@ -7,14 +7,14 @@ use yii\helpers\Html;
 
 <div class="panel panel-default">
 
-    <div class="panel-heading"><?= '<strong>Scroll Up</strong> module configuration' ?></div>
+    <div class="panel-heading"><?= \Yii::t('ScrollupModule.config', '<strong>Scroll Up</strong> module configuration'); ?></div>
 
     <div class="panel-body">
 
         <?php $form = ActiveForm::begin(['id' => 'configure-form']); ?>
         <div class="form-group">
             <?= $form->field($model, 'position'); ?>
-            <?= $form->field($model, 'color')->widget(ColorInput::class) ?>
+            <?= $form->field($model, 'color')->widget(ColorInput::class, ['options' => ['placeholder' => \Yii::t('ScrollupModule.config', 'Select color ...')]]); ?>
         </div>
 
         <div class="form-group">
