@@ -14,7 +14,7 @@ use yii\helpers\Html;
         <?php $form = ActiveForm::begin(['id' => 'configure-form']); ?>
         <div class="form-group">
             <?= $form->field($model, 'position'); ?>
-            <?= $form->field($model, 'color')->widget(ColorInput::class) ?>
+            <?= $form->field($model, 'color')->widget(ColorInput::class, ['options' => ['placeholder' => 'Select color ...']]); ?>
         </div>
 
         <div class="form-group">
