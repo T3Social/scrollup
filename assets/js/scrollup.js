@@ -36,7 +36,8 @@ humhub.module('scrollUpButton', function (module, require, $) {
 
         var $appendButtonTo = [
             new ParentElToAppend($('.layout-sidebar-container')),
-            new ParentElToAppend($('.wiki-menu'), 'fromRight'),
+            new ParentElToAppend($('.wiki-menu')),
+            new ParentElToAppend($('.task-list')),
             new ParentElToAppend($('#wallStream')),
         ]
 
