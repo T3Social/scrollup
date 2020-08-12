@@ -1,4 +1,8 @@
 ## Changelogs
+
+Date: *8/8/2020*
+- Enh: Styling changes; JS  support an array of classes to append to; You can choose between a default position and position from the right for such cases like a wiki  page 
+
 Date: *5/5/2020*
 - Enh: Increased minimum HumHub version to `v1.4.x`
 
