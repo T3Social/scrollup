@@ -27,3 +27,5 @@ Please take note of the below supported versions of PHP & HumHub for this module
 
 For any security vulnerabilities found please email us at [kodo@greenmeteor.net](mailto:kodo@greenmeteor.net) with detailed information on when where,
 and what you were doing to show this vulnerability.
+
+> Notice: Issues will be closed as it is recommended to email in the report of any vulnerabilities!
