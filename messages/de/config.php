@@ -2,7 +2,7 @@
 
 return [
     '<strong>Scroll Up</strong> module configuration' => '<strong>Scroll Up</strong> Moduleinstellungen',
-    'Color:' => 'Farbe',
+    'Color:' => 'Farbe:',
     'Invalid color!' => 'Ungültige Farbe!',
     'Position:' => 'Position:',
     'Save' => 'Speichern',
